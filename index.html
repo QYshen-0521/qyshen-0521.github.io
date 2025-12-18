@@ -2,33 +2,54 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的个人主页 - [沈谦益]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沈谦益 | Quant & CS</title>
+    <!-- 引入 FontAwesome 图标库 (用于显示图标) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入你的样式文件 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>👋 欢迎来到 [沈谦益] 的主页</h1>
-        <p>一位对 [计算机科学] 充满热情的学习者。</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>👋 你好，我是沈谦益</h1>
+            <p class="tagline">计算机科学 / 量化交易探索者 / 终身学习者</p>
+        </header>
 
-    <section id="about">
-        <h2>🙋‍♂️ 关于我</h2>
-        <p>我目前正在学习 [量化交易]，并对 [量化交易] 抱有浓厚的兴趣。</p>
-        <p>我的目标是 [记录学习笔记，展示作品]。</p>
-    </section>
+        <section id="about" class="card">
+            <h2><i class="fas fa-user-astronaut"></i> 关于我</h2>
+            <p>由于对数据与逻辑的热爱，我目前正全身心投入于 <span class="tag">计算机科学</span> 的世界，并对 <span class="tag">量化交易 (Quant)</span> 抱有浓厚的兴趣。</p>
+            <p>我不满足于仅仅编写代码，我更希望能通过算法理解市场的律动。</p>
+            <p>在这里，我将：</p>
+            <ul class="feature-list">
+                <li>📚 记录 CS 和 金融数学的学习笔记</li>
+                <li>🛠️ 展示我的回测策略和开源项目</li>
+                <li>🚀 分享我的思考与成长</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>📧 联系方式</h2>
-        <ul>
-            <li>**邮箱：** <a href="mailto:您的邮箱地址">您的邮箱地址</a></li>
-            <li>**GitHub：** <a href="您的GitHub链接" target="_blank">您的GitHub用户名</a></li>
-            <li>**其他链接：** [例如：LinkedIn/微博链接]</li>
-        </ul>
-    </section>
+        <section id="contact" class="card">
+            <h2><i class="fas fa-paper-plane"></i> 保持联系</h2>
+            <p>如果你对我的项目感兴趣，或者想探讨技术与交易的话题，欢迎通过以下方式联系我：</p>
+            <div class="contact-list">
+                <a href="mailto:521qyshen@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> 发送邮件
+                </a>
+                <a href="https://github.com/qyshen-0521" target="_blank" class="contact-btn">
+                    <i class="fab fa-github"></i> GitHub 主页
+                </a>
+                <!-- 预留位置，以后可以加知乎或博客园 -->
+                <a href="#" class="contact-btn disabled">
+                    <i class="fas fa-link"></i> 更多链接建设中...
+                </a>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 [沈谦益]. 所有权利保留。</p>
+        <p>&copy; 2025 沈谦益 (QYshen). All Rights Reserved.</p>
+        <p class="footer-note">Powered by Passion & Code</p>
     </footer>
 
 </body>
